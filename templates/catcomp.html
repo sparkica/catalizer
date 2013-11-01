@@ -1,0 +1,53 @@
+{% extends "layout.html" %}
+{% block content %}
+
+<div class="row">
+  <div class="col-md-6">
+	<h3>Gimme your data!</h3>
+
+  <form role="form" name="catcomp" action="/complicate" method="post">
+	<div class="form-group">
+	    <label for="twitter">Name:</label>
+	    <input type="text" name="user_name" value="Mateja">
+	</div>
+
+<div class="form-group">
+	<label>Gender</label>
+  <div class="radio">
+  <label>
+    <input type="radio" name="gender" id="female" value="female" checked>
+    Female
+  </label>
+</div>
+<div class="radio">
+  <label>
+    <input type="radio" name="gender" id="male" value="male">
+    Male
+  </label>
+</div>
+</div>
+
+  <div class="form-group">
+    <label for="age">Age</label>
+    <input type="text" id="age_output">
+    <input type="range"  id="slider_age" name="age" min="10" max="100"/>
+  </div>
+
+    <div class="form-group">
+    <label for="friends">Real friends</label>
+    <input type="text" id="friends_output">
+    <input type="range"  id="slider_friends" name="friends" min="1" max="100"/>
+  </div>
+
+  <div class="form-group">
+    <label for="twitter">Twitter handler:</label>
+    <input type="text" name="twitter" value="sparkica">
+  </div>
+
+  <button type="submit" class="btn btn-default">Give me my score!</button>
+</form>
+</div> <!-- col -->
+  <div class="col-md-6"></div>
+</div> <!-- row -->
+
+{% endblock %}

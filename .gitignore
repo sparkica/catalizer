@@ -1,0 +1,5 @@
+.DS_Store
+*.pyc
+routes_local.py
+*sublime-project*
+*sublime-workspace*
