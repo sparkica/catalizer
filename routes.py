@@ -60,7 +60,7 @@ def get_catcomplicator_info():
 	metadata = {
 		"name": "Catcomplicator",
 		"version": "0.1",
-		"author", "sparkica"
+		"author": "sparkica"
 	}
 	
 	return jsonpify(metadata)
